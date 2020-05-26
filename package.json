@@ -1,0 +1,62 @@
+{
+  "name": "tooltip-interractive",
+  "version": "1.0.1",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@storybook/preset-create-react-app": "^2.0.0",
+    "@storybook/react": "^5.3.14",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-html-parser": "^2.0.2",
+    "react-jss": "^10.0.4",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.17"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "yarn",
+    "overrides": {
+      "*": {
+        "dependencies": {
+          "react": "-"
+        },
+        "peerDependencies": {
+          "react": "+"
+        }
+      }
+    }
+  }
+}
